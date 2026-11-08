@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Shreeram Agri Services Pvt. Ltd.</title>
+  <meta name="description" content="See Shreeram Agri Services equipment in action in the field, from tractors and harvesters to cultivators and seed sowing machines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/gallary.css">
+  <link rel="stylesheet" href="../css/shared.css">
+  <script src="../js/language.js" defer></script>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <span>Trusted farm machinery partner since 2007</span>
+      <span>Call us: <a href="tel:+917972080355">+91 79720 80355</a> | <a href="tel:+919096640628">+91 90966 40628</a></span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav-wrap" id="navbar">
+    <div class="container nav">
+      <a href="home.html" class="brand" aria-label="Shreeram Agri Services home">
+        <img class="brand-mark" src="../assets/icons/shreeram-logo.png" alt="">
+        <div class="brand-text">
+          <strong>Shreeram Agri</strong>
+          <span>Services Pvt. Ltd.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallary.html" class="active">Gallery</a></li>
+        <li><a href="solution.html">Solutions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="home.html#booking" class="btn btn-green nav-cta">Book Now</a></li>
+      </ul>
+
+      <button type="button" class="language-toggle" id="languageToggle" aria-label="Switch to Marathi">मराठी</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="crumbs"><a href="home.html">Home</a> &nbsp;/&nbsp; Gallery</p>
+      <span class="eyebrow">Our work in the field</span>
+      <h1>Equipment <em>in action</em></h1>
+      <p class="lead">
+        A look at the machines and the work our team does every season, from
+        ploughing and sowing to harvest and transport.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <div class="container">
+
+      <div class="filters reveal" role="group" aria-label="Filter photos by service">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tractor">Tractor</button>
+        <button class="filter-btn" data-filter="harvesting">Harvesting</button>
+        <button class="filter-btn" data-filter="trolley">Trolley</button>
+        <button class="filter-btn" data-filter="cultivator">Cultivator</button>
+        <button class="filter-btn" data-filter="sowing">Seed Sowing</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- Gallery photos -->
+        <figure class="gallery-item wide reveal" data-category="all">
+          <img src="../assets/images/Mahendra.png" alt="Mahindra tractor" data-full="../assets/images/Mahendra.png">
+          <figcaption class="caption">Farm equipment in active use</figcaption>
+        </figure>
+
+        <figure class="gallery-item tall reveal" data-category="all">
+          <img src="../assets/images/Swaraj.png" alt="Swaraj tractor" data-full="../assets/images/Swaraj.png">
+          <figcaption class="caption">Shreeram Agri Services First Tractor</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="all">
+          <img src="../assets/images/Thresher.png" alt="Agricultural thresher" data-full="../assets/images/Thresher.png">
+          <figcaption class="caption">Thresher</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="all">
+          <img src="../assets/images/Trolley.webp" alt="Tractor trolley in the field" data-full="../assets/images/Trolley.webp">
+          <figcaption class="caption">Tractor Trolley</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="all">
+          <img src="../assets/images/Minicutter.webp" alt="Tractor crop cutter" data-full="../assets/images/Minicutter.webp">
+          <figcaption class="caption">Tractor Crop Cutter</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="sowing">
+          <img src="../assets/images/Seeder.jpg" alt="Seed sowing machine in the field" data-full="../assets/images/Seeder.jpg">
+          <figcaption class="caption">Seed sowing machine</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="all">
+          <img src="../assets/images/Tiller.jpg" alt="Tractor tiller" data-full="../assets/images/Tiller.jpg">
+          <figcaption class="caption">Tractor Tiller</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <i class="fas fa-xmark"></i>
+    </button>
+    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>Want your field to look like this?</h2>
+        <p>Book a machine on WhatsApp or give us a call. We will confirm availability and timing with you.</p>
+        <div class="cta-actions">
+          <a href="home.html#booking" class="btn btn-green"><i class="fab fa-whatsapp"></i> Book a Service</a>
+          <a href="tel:+917972080355" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="home.html" class="brand">
+          <img class="brand-mark" src="../assets/icons/shreeram-logo.png" alt="Shreeram Agri Services logo">
+          <div class="brand-text">
+            <strong>Shreeram Agri Services</strong>
+            <span>Pvt. Ltd. &middot; Since 2007</span>
+          </div>
+        </a>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/@ShreeRamAgriServices" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/shreeramagriservices" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/shreeramagriservices" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917972080355" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2007 Shreeram Agri Services Pvt. Ltd. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/917972080355" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <div class="mobile-contact-bar" aria-label="Contact Shreeram Agri Services">
+    <a class="mobile-contact-call" href="tel:+917972080355"><i class="fas fa-phone"></i> Call Now</a>
+    <a class="mobile-contact-whatsapp" href="https://wa.me/917972080355"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/gallary.js"></script>
+</body>
+</html>
